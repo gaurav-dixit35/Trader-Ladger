@@ -87,8 +87,6 @@ windows/flutter/generated_plugins.cmake
 
 # Firebase / Google project configuration
 # Keep real project files local. Commit sanitized examples instead.
-google-services.json
-android/app/google-services.json
 GoogleService-Info.plist
 ios/Runner/GoogleService-Info.plist
 macos/Runner/GoogleService-Info.plist
