@@ -12,52 +12,88 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# IDEs and editors
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
+.vscode/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter / Dart / Pub
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
-/build/
-/coverage/
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
 
-# Symbolication related
+# Keep lockfile tracked for this app.
+!pubspec.lock
+
+# Flutter build outputs
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
+flutter_*.png
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Android local/build files
+.gradle/
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/app/*.apk
+android/app/*.aab
+android/app/outputs/
+android/**/captures/
+android/hs_err_pid*.log
 
-# Local environment and generated platform config
-**/local.properties
-**/Generated.xcconfig
-**/flutter_export_environment.sh
-**/flutter_native_integration.env
-**/ephemeral/
+# iOS / Xcode local/generated files
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/flutter_assets/
+ios/Pods/
+ios/.symlinks/
+ios/DerivedData/
+ios/**/xcuserdata/
+ios/**/*.mode1v3
+ios/**/*.mode2v3
+ios/**/*.moved-aside
+ios/**/*.pbxuser
+ios/**/*.perspectivev3
 
-# Firebase / Google project config
+# macOS local/generated files
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/**/xcuserdata/
+macos/**/DerivedData/
+
+# Generated desktop plugin files
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/generated_plugin_registrant.h
+linux/flutter/generated_plugins.cmake
+macos/Flutter/GeneratedPluginRegistrant.swift
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugin_registrant.h
+windows/flutter/generated_plugins.cmake
+
+# Firebase / Google project configuration
+# Keep real project files local. Commit sanitized examples instead.
 google-services.json
 android/app/google-services.json
 GoogleService-Info.plist
 ios/Runner/GoogleService-Info.plist
 macos/Runner/GoogleService-Info.plist
 lib/config/firebase_options.dart
+firebase_options.dart
 
 # Signing, secrets, and local credentials
 *.jks
